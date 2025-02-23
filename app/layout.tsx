@@ -1,17 +1,17 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "../components/Navbar";
-import Footer from "@/components/Footer";
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import Navbar from '../components/Navbar';
+import Footer from '@/components/Footer';
 
 const geistSans = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+  variable: '--font-geist-sans',
+  subsets: ['latin'],
 });
 
 export const metadata: Metadata = {
-  title: "Ocean",
-  description: "best modern crn dashboard for engineering teams",
+  title: 'Ocean',
+  description: 'best modern crn dashboard for engineering teams',
 };
 
 export default function RootLayout({
@@ -24,9 +24,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} bg-slate-900 text-slate-400 text-lg min-h-screen overflow-x-hidden`}
       >
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
