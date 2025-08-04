@@ -48,10 +48,11 @@ export default function Home() {
               </div>
             </div>
             <Image
-              src={'/hero-image.svg'}
+              src={'/Hero-image.svg'}
               alt="hero"
               width={670}
               height={370}
+              priority
               className="mx-auto shadow-xl"
             />
           </div>
